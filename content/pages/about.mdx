@@ -8,30 +8,10 @@ embeddedImages:
   - ./images/bg.jpg
 ---
 
-import { Box } from "@material-ui/core";
-import MyHero from "components/Hero";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import RepeatLayout from "components/RepeatLayout";
 
-# Heading 1
-
-## Heading 2
-
-<button variant="outlined">This is a button</button>
-
-<GatsbyImage width={500} alt="alt" image={getImage(props.localImages[0])} />
-
-<Hero>
+<RepeatLayout>
 
 # This is a hero
 
-</Hero>
-
-<Block bgcolor="secondary.main" color="secondary.contrastText">
-
-# My page
-
-<Box bgcolor="primary.main" p={3}>
-  <p>a paragraph</p>
-</Box>
-
-</Block>
+</RepeatLayout>

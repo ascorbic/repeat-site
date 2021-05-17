@@ -27,6 +27,7 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "prestart": "npm run clean",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -34,5 +35,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Hyperobjekt/gatsby-starter-hyperobjekt"
-  }
+  },
+  "devDependencies": {}
 }
