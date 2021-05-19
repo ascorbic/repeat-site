@@ -5,10 +5,12 @@ let theme = createMuiTheme({
     fontFamily: ["Montserrat"].join(","),
   },
   palette: {
+    white: "#FFFFFF",
     primary: {
       main: "#D2801E",
       bright: "#ED6D0B",
       dull: "#F3EEE5",
+      light: "#C4C4C4",
     },
     secondary: {
       main: "#323438",
