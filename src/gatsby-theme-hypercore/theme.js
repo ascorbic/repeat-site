@@ -1,27 +1,19 @@
-import pink from "@material-ui/core/colors/pink";
 import { createMuiTheme } from "@material-ui/core";
 
 let theme = createMuiTheme({
   typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(","),
+    fontFamily: ["Montserrat"].join(","),
   },
   palette: {
     primary: {
-      main: "#616161",
+      main: "#D2801E",
+      bright: "#ED6D0B",
+      dull: "#F3EEE5",
     },
     secondary: {
-      main: pink[500],
+      main: "#323438",
+      blue: "#0BA9ED",
+      dull: "#7C7C7C",
     },
   },
   overrides: {
