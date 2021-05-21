@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-hypersite",
-  "description": "Site starter for Gatsby Hyperobjekt projects",
-  "version": "1.0.3",
-  "author": "Lane Olson <laneolson@gmail.com>",
+  "name": "repeat-site",
+  "description": "In support of the Princeton ZERO Lab’s Rapid Energy Policy Evaluation and Analysis Toolkit (REPEAT) project,",
+  "version": "1.0.6",
+  "author": "Uri Maxima <uri@maxima.ninja>",
   "dependencies": {
     "@hyperobjekt/material-ui-website": "1.0.12",
     "@material-ui/core": "^4.11.3",
     "gatsby": "^3.2.1",
-    "gatsby-plugin-image": "^1.4.1",
-    "gatsby-theme-hypersite": "^1.0.3",
+    "gatsby-plugin-image": "^1.5.0",
+    "gatsby-theme-hypersite": "^1.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -27,6 +27,7 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "prestart": "npm run clean",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -34,5 +35,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Hyperobjekt/gatsby-starter-hyperobjekt"
-  }
+  },
+  "devDependencies": {}
 }
