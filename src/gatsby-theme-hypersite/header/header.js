@@ -7,8 +7,9 @@ const styles = (theme) => {
   return {
     root: {
       backgroundColor: fade(theme.palette.secondary.dark, 0.8),
-      position: "-webkit-sticky",
-      position: "sticky",
+      width: "100%",
+      position: "-webkit-fixed",
+      position: "fixed",
       top: 0,
       zIndex: 5,
     },

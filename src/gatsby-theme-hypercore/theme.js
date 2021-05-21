@@ -40,9 +40,6 @@ let theme = createMuiTheme({
           borderRadius: "4px",
           display: "inline-block",
         },
-        ".MuiTypography-body1 + .MuiTypography-body1": {
-          marginTop: "1rem",
-        },
       },
     },
     MuiDivider: {
