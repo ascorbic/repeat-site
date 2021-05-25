@@ -6,13 +6,16 @@ meta:
   title: REPEAT Project | Princeton ZERO Lab
   description: A starter theme for gatsby
   image: ./images/hello.jpg
+embeddedImages:
+  - ./images/map.svg
 ---
 
 import Marquee from "components/Marquee";
 import ArticleBody from "components/ArticleBody";
 import ArticleGraphic from "components/ArticleGraphic";
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Box,Grid } from "@material-ui/core";
+import Map from "./images/map.svg"
 
 <Marquee 
 headerText="Data Driven Climate Policy Evaluation"
@@ -30,22 +33,28 @@ subHeaderText="Created by the Princeton ZERO Lab, this site puts granular analys
 <ArticleGraphic>
     <Grid container spacing={3}>
     <Grid item xs={12} md={6}>
-        image...
+        <Map width="100%" />
+        <GatsbyImage width={500} alt="alt" image={getImage(props.localImages[0])} />
     </Grid>
     <Grid item xs={12} md={6}>
-        <Box>
-            <div>
-                <span></span><span>PV</span>
-            </div>
-            <div>
-                <span></span><span>Wind</span>
-            </div>
-            <div>
-                <span></span><span>Population Density &lt; 100 people per sq. mi</span>
-            </div>
-        </Box>
-        <Box>
-            <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
+        <Box style={{padding: "20% 0 0 20px"}}>
+            <Box>
+                <div>
+                    <span style={{padding:0, borderRadius: "50%", verticalAlign: "middle", display:"inline-block", width:"12px", height: "12px", backgroundColor: "#ED6D0B"}}></span>
+                    <span style={{padding: "0 0 0 10px", verticalAlign: "middle", display:"inline-block"}}>PV</span>
+                </div>
+                <div>
+                    <span style={{padding:0, borderRadius: "50%", verticalAlign: "middle", display:"inline-block", width:"12px", height: "12px", backgroundColor: "#0BA9ED"}}></span>
+                    <span style={{padding: "0 0 0 10px", verticalAlign: "middle", display:"inline-block"}}>Wind</span>
+                </div>
+                <div>
+                    <span style={{padding:0, borderRadius: "50%", verticalAlign: "middle", display:"inline-block", width:"12px", height: "12px", backgroundColor: "#7C7C7C"}}></span>
+                    <span style={{padding: "0 0 0 10px", verticalAlign: "middle", display:"inline-block"}}>Population Density &lt; 100 people per sq. mi</span>
+                </div>
+            </Box>
+            <Box>
+                <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
+            </Box>
         </Box>
     </Grid>
     </Grid>
