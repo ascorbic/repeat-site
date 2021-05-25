@@ -1,7 +1,11 @@
-const metadata = require("./config/metadata.json")
+const metadata = require("./config/metadata.json");
 module.exports = {
   siteMetadata: metadata,
-  plugins: [{
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-theme-hypersite`,
       options: {
         contentPath: `content/pages`,
@@ -13,10 +17,12 @@ module.exports = {
       options: {
         webFontsConfig: {
           fonts: {
-            google: [{
-              family: `Montserrat`,
-              variants: [`300`, `400`, `500`],
-            }, ],
+            google: [
+              {
+                family: `Montserrat`,
+                variants: [`300`, `400`, `500`],
+              },
+            ],
           },
         },
       },
@@ -29,4 +35,4 @@ module.exports = {
     //   },
     // },
   ],
-}
+};

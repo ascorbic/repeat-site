@@ -8,39 +8,53 @@ meta:
   image: ./images/hello.jpg
 ---
 
-import RepeatLayout from "components/RepeatLayout";
 import Marquee from "components/Marquee";
+import ArticleBody from "components/ArticleBody";
+import ArticleGraphic from "components/ArticleGraphic";
+import { StaticImage } from "gatsby-plugin-image"
+import { Box,Grid } from "@material-ui/core";
 
 <Marquee 
 headerText="Data Driven Climate Policy Evaluation"
 subHeaderText="Created by the Princeton ZERO Lab, this site puts granular analysis in the hands of policy makers, media and the general public."
 />
+
+
+
+
 <Container maxWidth="lg">
+<ArticleBody>
+    <p>The Princeton ZERO Lab and Net-Zero America study team have developed a suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapidly evaluating policy and regulatory proposals at politically-relevant spatial resolutions (e.g., state, county, and sometimes finer resolutions). This includes evaluation of candidate sites for wind and solar development, thermal power plant siting and repowering, and transmission expansion as well as associated impacts on air quality and labor/employment.</p>
+</ArticleBody>
 
-<div bgcolor="primary.main" color="white" textAlign="center" mt={3} p={2}>
-    Paragraph 1
-</div>
-<div component="p" bgcolor="primary.light" color="primary.bright" textAlign="center" mt={3} p={2}>
-    Paragraph 2
-</div>
-<div component="p" bgcolor="primary.light" color="primary.bright" textAlign="center" mt={3} p={2}>
-    Paragraph 3
-</div>
+<ArticleGraphic>
+    <Grid container spacing={3}>
+    <Grid item xs={12} md={6}>
+        image...
+    </Grid>
+    <Grid item xs={12} md={6}>
+        <Box>
+            <div>
+                <span></span><span>PV</span>
+            </div>
+            <div>
+                <span></span><span>Wind</span>
+            </div>
+            <div>
+                <span></span><span>Population Density &lt; 100 people per sq. mi</span>
+            </div>
+        </Box>
+        <Box>
+            <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
+        </Box>
+    </Grid>
+    </Grid>
+</ArticleGraphic>
 
-<div component="p" bgcolor="secondary.dull" color="secondary.main" textAlign="center" mt={3} p={2}>
-    Paragraph 4
-</div>
-<div component="p" bgcolor="secondary.dull" color="secondary.blue" textAlign="center" mt={3} p={2}>
-    Paragraph 5
-</div>
-<div component="p" bgcolor="secondary.blue" color="secondary.main" textAlign="center" mt={3} p={2}>
-    Paragraph 6
-</div>
+<ArticleBody>
+    <p>These tools were employed to great impact in the <b><i>Net-Zero America</i></b> study, which “set an entirely new standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in its results, according to John Holdren, former Science Advisor to President Obama and Director of the White House Office of Science and Technology Policy. The spatially-explicit and granular results and associated maps have proven to be highly relevant to a wide range of stakeholders and decision makers, and the responses to the report indicate the desire for more politically-salient outputs from energy systems models.</p>
+    <p>The Princeton ZERO Lab proposes to further develop and refine this suite of geospatially-granular planning, modeling, and visualization tools and employ them to rapidly evaluate federal policy proposals, providing independent, timely, and credible information and analysis for broad educational purposes, including as a resource available publicly for stakeholders, decision-makers, and the media.</p>
+</ArticleBody>
 
-<RepeatLayout>
 
-### Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-
-## Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-</RepeatLayout>
 </Container>
