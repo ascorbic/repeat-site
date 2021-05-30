@@ -14,6 +14,7 @@ import Marquee from "components/Marquee";
 import ArticleBody from "components/ArticleBody";
 import ArticleGraphic from "components/ArticleGraphic";
 import SectionHeader from "components/SectionHeader"
+import Stats from "components/Stats"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Box,Grid } from "@material-ui/core";
 import Map from "./images/map.svg"
@@ -67,5 +68,26 @@ subHeaderText="Created by the Princeton ZERO Lab, this site puts granular analys
 </ArticleBody>
 
 <SectionHeader header="evaluate the policies" supportingText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project."/>
+<Stats data={{
+    header:'The Biden Administration Climate Program',
+    background:'',
+    stats:[{
+        value: '78%',
+        label: 'Increase in Renewables',
+        supportingText: 'By 2050'
+    },{
+        value: '13.5%',
+        label: 'Average Annual Reduction in Fossil Fuels',
+        supportingText: 'Starting in 2023'
+    },{
+        value: '15 Million',
+        label: 'New Roles Created',
+        supportingText: 'In Energy Industries'
+    }]
+}}/>
 
+<ArticleBody>
+    <p>Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+    <p><b><u>Read More</u></b> ></p>
+</ArticleBody>
 </Container>

@@ -6,6 +6,7 @@ let theme = createMuiTheme({
   },
   palette: {
     white: "#FFFFFF",
+    black: "#262626",
     primary: {
       main: "#D2801E",
       bright: "#ED6D0B",

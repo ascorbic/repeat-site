@@ -8,6 +8,7 @@ const styles = (theme) => {
   return {
     root: {
       margin: "60px 0 30px 0",
+      color: theme.palette.secondary.dull,
     },
     headerRow: {
       display: "flex",
