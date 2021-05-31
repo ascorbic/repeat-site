@@ -4,7 +4,6 @@ import { Container, withStyles, Box } from "@material-ui/core";
 // import PropTypes from "prop-types";
 
 const styles = (theme) => {
-  console.log(theme);
   return {
     root: {
       backgroundColor: theme.palette.secondary.dark,
