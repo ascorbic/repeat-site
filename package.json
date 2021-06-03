@@ -1,45 +1,90 @@
 {
   "name": "repeat-site",
-  "description": "In support of the Princeton ZERO Lab’s Rapid Energy Policy Evaluation and Analysis Toolkit (REPEAT) project,",
-  "version": "1.0.6",
-  "author": "Uri Maxima <uri@maxima.ninja>",
-  "dependencies": {
-    "@hyperobjekt/material-ui-website": "1.0.12",
-    "@material-ui/core": "^4.11.3",
-    "gatsby": "^3.2.1",
-    "gatsby-image": "^3.6.0",
-    "gatsby-plugin-image": "^1.5.0",
-    "gatsby-plugin-react-svg": "^3.0.1",
-    "gatsby-plugin-sharp": "^3.5.0",
-    "gatsby-source-filesystem": "^3.6.0",
-    "gatsby-theme-hypersite": "^1.0.6",
-    "gatsby-transformer-sharp": "^3.5.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "resolutions": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "gatsby clean",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "prestart": "npm run clean",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hyperobjekt/gatsby-starter-hyperobjekt"
+  "dependencies": {
+    "@headlessui/react": "^1.2.0",
+    "@heroicons/react": "^1.0.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "@tailwindcss/ui": "^0.6.2",
+    "antd": "^4.9.3",
+    "cors": "^2.8.5",
+    "moment-timezone": "^0.5.32",
+    "next": "10.2.3",
+    "nprogress": "^0.2.0",
+    "postcss": "^8.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "slugify": "^1.5.0",
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-filters": "^3.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "next-unused": "0.0.6",
+    "react-axe": "^3.5.4"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "react",
+      "eslint-plugin-jsx-a11y",
+      "jsx-a11y"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ]
+        }
+      }
+    },
+    "root": true
+  },
+  "author": "Uri Maxima",
+  "license": "ISC"
 }
