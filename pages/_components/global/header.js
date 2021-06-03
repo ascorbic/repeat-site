@@ -79,7 +79,7 @@ export default function RepeatHeader() {
     <Popover className="fixed w-screen top-0 bg-black bg-opacity-75">
       {({ open }) => (
         <>
-          <div className="container max-w-screen-lg mx-auto pt-4 sm:px-6">
+          <div className="container max-w-screen-lg mx-auto pt-4 md:px-1 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">

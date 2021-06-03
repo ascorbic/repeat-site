@@ -44,7 +44,7 @@ module.exports = {
 
       colors: {
         repeat: {
-          dark: "#02395e",
+          dark: "#7C7C7C",
           neutral: "#C4C4C4",
           light: "#F3EEE5",
           DEFAULT: "#ED6D0B",

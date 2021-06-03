@@ -1,6 +1,6 @@
 import React from "react";
 import RepeatHero from "../global/hero";
-
+import SectionHeader from "../global/section-header";
 const RepeatLanding = () => {
   return (
     <React.Fragment>
@@ -64,6 +64,11 @@ const RepeatLanding = () => {
           </p>
         </div>
       </div>
+
+      <SectionHeader
+        headerText="evaluate the policies"
+        subheaderText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project."
+      />
     </React.Fragment>
   );
 };
