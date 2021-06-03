@@ -49,12 +49,7 @@ module.exports = {
           light: "#F3EEE5",
           DEFAULT: "#ED6D0B",
           primary: "#4059ad",
-          "primary-light": "#7293fb",
-          secondary: "#40ad94",
-          accent: "#ff8d66", //#E9BF56;
-          positive: "#4fcb78",
-          negative: "#ff3b3b",
-          background: "#f5f8fa", //#F5F8FA;
+          burnt: "#D2801E",
         },
       },
       rotate: {

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const SectionHeader = ({ headerText, subheaderText }) => {
   return (
-    <div className="container max-w-screen-lg m-auto">
+    <div className="container pb-20 max-w-screen-lg m-auto">
       <div className="flex items-end">
         <div className="">
           <h3 className="text-sm uppercase text-repeat-dark font-extrabold">{headerText}</h3>

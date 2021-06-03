@@ -1,6 +1,30 @@
 import React from "react";
 import RepeatHero from "../global/hero";
 import SectionHeader from "../global/section-header";
+import Stats from "../global/stats";
+
+let stats = {
+  header: "The Biden Administration Climate Program",
+  background: "",
+  stats: [
+    {
+      value: "78%",
+      label: "Increase in Renewables",
+      supportingText: "By 2050",
+    },
+    {
+      value: "13.5%",
+      label: "Average Annual Reduction in Fossil Fuels",
+      supportingText: "Starting in 2023",
+    },
+    {
+      value: "16 Million",
+      label: "New Roles Created",
+      supportingText: "In Energy Industries",
+    },
+  ],
+};
+
 const RepeatLanding = () => {
   return (
     <React.Fragment>
@@ -69,6 +93,19 @@ const RepeatLanding = () => {
         headerText="evaluate the policies"
         subheaderText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project."
       />
+
+      <Stats stats={stats} />
+
+      <div className="container max-w-screen-lg py-10 m-auto">
+        <div className="md:w-1/2">
+          <p>
+            Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+            nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla.
+          </p>
+        </div>
+        <a className="text-sm font-bold inline-block pt-5 border-b-2 border-black">Read More &gt;</a>
+      </div>
     </React.Fragment>
   );
 };
