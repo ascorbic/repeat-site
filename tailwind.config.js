@@ -36,6 +36,12 @@ module.exports = {
       minHeight: {
         map: "260px",
       },
+      height: {
+        "screen/2": "50vh",
+        "screen/1.5": "66.667vh",
+        "screen/1.3": "75vh",
+      },
+
       colors: {
         repeat: {
           dark: "#02395e",
@@ -83,13 +89,7 @@ module.exports = {
     opacity: ["responsive", "hover", "active", "focus", "group-hover"],
     filter: ["responsive"],
     backdropFilter: ["responsive"],
-    backgroundOpacity: [
-      "responsive",
-      "hover",
-      "active",
-      "group-hover",
-      "focus",
-    ],
+    backgroundOpacity: ["responsive", "hover", "active", "group-hover", "focus"],
   },
   plugins: [
     require("@tailwindcss/forms"),

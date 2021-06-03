@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -14,77 +14,79 @@ import {
   SupportIcon,
   ViewGridIcon,
   XIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+} from "@heroicons/react/outline";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const policies = [
   {
-    name: 'Biden Administration Plan',
-    href: '#',
+    name: "Biden Administration Plan",
+    href: "#",
     icon: ChartBarIcon,
   },
   {
-    name: 'CRES Climate Agenda',
-    href: '#',
+    name: "CRES Climate Agenda",
+    href: "#",
     icon: CursorClickIcon,
   },
   {
-    name: 'SBA Green Recovery Fund',
-    href: '#',
+    name: "SBA Green Recovery Fund",
+    href: "#",
     icon: ViewGridIcon,
   },
   {
-    name: 'Green New Deal',
-    href: '#',
+    name: "Green New Deal",
+    href: "#",
     icon: RefreshIcon,
   },
-]
+];
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
+  { name: "Watch Demo", href: "#", icon: PlayIcon },
+  { name: "Contact Sales", href: "#", icon: PhoneIcon },
+];
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    name: "Help Center",
+    description: "Get all of your questions answered in our forums or contact support.",
+    href: "#",
     icon: SupportIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    name: "Guides",
+    description: "Learn how to maximize our platform to get the most out of it.",
+    href: "#",
     icon: BookmarkAltIcon,
   },
   {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
+    name: "Events",
+    description: "See what meet-ups and other events we might be planning near you.",
+    href: "#",
     icon: CalendarIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
+  { name: "Security", description: "Understand how we take your privacy seriously.", href: "#", icon: ShieldCheckIcon },
+];
 const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-]
+  { id: 1, name: "Boost your conversion rate", href: "#" },
+  { id: 2, name: "How to use search engine optimization to drive traffic to your site", href: "#" },
+  { id: 3, name: "Improve your customer experience", href: "#" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function RepeatHeader() {
   return (
-    <Popover className="relative bg-black bg-opacity-80">
+    <Popover className="fixed w-screen top-0 bg-black bg-opacity-75">
       {({ open }) => (
         <>
-          <div className="max-w-full mx-auto pt-4 sm:px-6">
+          <div className="container mx-auto pt-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="text-repeat text-xl font-bold">REPEAT</span>
-                  <span className="text-repeat-light text-sm pl-3">Rapid Energy Policy Evaluation and Analysis Toolkit</span>
+                  <span className="text-repeat-light text-sm pl-3">
+                    Rapid Energy Policy Evaluation and Analysis Toolkit
+                  </span>
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -94,7 +96,10 @@ export default function RepeatHeader() {
                 </Popover.Button>
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                <a href="#" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
+                <a
+                  href="#"
+                  className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat"
+                >
                   About
                 </a>
                 <Popover className="relative">
@@ -102,8 +107,10 @@ export default function RepeatHeader() {
                     <>
                       <Popover.Button
                         className={classNames(
-                          open ? 'text-white' : 'font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat',
-                          'group inline-flex items-center text-base font-medium hover:text-white focus:outline-none'
+                          open
+                            ? "text-white"
+                            : "font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat",
+                          "group inline-flex items-center text-base font-medium hover:text-white focus:outline-none"
                         )}
                       >
                         <span>Policies</span>
@@ -145,15 +152,20 @@ export default function RepeatHeader() {
                   )}
                 </Popover>
 
-                <a href="#" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
+                <a
+                  href="#"
+                  className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat"
+                >
                   Media
                 </a>
-                <a href="#" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
+                <a
+                  href="#"
+                  className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat"
+                >
                   NZAP
                 </a>
-
               </Popover.Group>
-              </div>
+            </div>
           </div>
 
           <Transition
@@ -243,5 +255,5 @@ export default function RepeatHeader() {
         </>
       )}
     </Popover>
-  )
+  );
 }
