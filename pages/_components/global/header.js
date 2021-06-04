@@ -76,21 +76,21 @@ function classNames(...classes) {
 
 export default function RepeatHeader() {
   return (
-    <Popover className="fixed w-screen top-0 bg-black bg-opacity-75">
+    <Popover className="fixed w-screen top-0 border-t-8 border-black bg-black bg-opacity-75">
       {({ open }) => (
         <>
           <div className="container max-w-screen-lg mx-auto pt-4 md:px-1 sm:px-6">
-            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-              <div className="flex justify-start lg:w-0 lg:flex-1">
+            <div className="flex justify-between items-center md:pt-6 pb-4 md:justify-start md:space-x-10">
+              <div className="flex justify-start pl-2 md:pl-0 lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="text-repeat text-xl font-bold">REPEAT</span>
-                  <span className="text-repeat-light text-sm pl-3">
+                  <span className="text-repeat-light text-xs md:text-sm md:pl-3 md:inline-block block">
                     Rapid Energy Policy Evaluation and Analysis Toolkit
                   </span>
                 </a>
               </div>
-              <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <div className="pr-2 -mt-4 md:hidden">
+                <Popover.Button className="p-2 inline-flex items-center justify-center text-repeat hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -183,18 +183,14 @@ export default function RepeatHeader() {
               static
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
-              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+              <div className="shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Workflow"
-                      />
+                      <span className="text-repeat text-xl font-bold">REPEAT</span>
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white p-2 inline-flex items-center justify-center text-repeat hover:text-gray-500 hover:bg-gray-100 focus:outline-none ">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -206,48 +202,14 @@ export default function RepeatHeader() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                          className="-m-3 px-3 py-2 flex items-center hover:bg-gray-50"
                         >
-                          <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                          <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                          {/* <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" /> */}
+                          <span className="text-base font-medium text-gray-900">{item.name}</span>
                         </a>
                       ))}
                     </nav>
                   </div>
-                </div>
-                <div className="py-6 px-5 space-y-6">
-                  <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Pricing
-                    </a>
-
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Docs
-                    </a>
-                    {resources.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                  {/* <div>
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                    <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?{' '}
-                      <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                        Sign in
-                      </a>
-                    </p>
-                  </div> */}
                 </div>
               </div>
             </Popover.Panel>
