@@ -17,5 +17,5 @@
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
   "filepath": "/Users/maxima.ninja/dev/_www/hyperobjekt-repeat/repeat-site/src/components/RepeatLayout.js",
-  "parser": "babel-eslint"
+  "parser": "babel"
 }

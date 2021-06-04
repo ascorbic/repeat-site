@@ -15,6 +15,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "@tailwindcss/ui": "^0.6.2",
     "antd": "^4.9.3",
+    "autoprefixer": "^10.2.6",
     "cors": "^2.8.5",
     "moment-timezone": "^0.5.32",
     "next": "10.2.3",

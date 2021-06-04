@@ -25,6 +25,11 @@ module.exports = {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: (theme) => ({
+        "media-vox": "url('/images/vox-media.png')",
+        "media-washington-post": "url('/images/washington-post.png')",
+        "media-new-york-times": "url('/images/new-york-times.png')",
+      }),
       opacity: {
         10: "0.1",
         15: "0.15",
@@ -36,19 +41,21 @@ module.exports = {
       minHeight: {
         map: "260px",
       },
+      height: {
+        "screen/2": "50vh",
+        "screen/1.5": "66.667vh",
+        "screen/1.3": "75vh",
+      },
+
       colors: {
         repeat: {
-          dark: "#02395e",
-          neutral: "#95b5cc",
-          light: "#ffffff",
-          DEFAULT: "#4059ad",
+          black: "#323438",
+          dark: "#7C7C7C",
+          neutral: "#C4C4C4",
+          light: "#F3EEE5",
+          DEFAULT: "#ED6D0B",
           primary: "#4059ad",
-          "primary-light": "#7293fb",
-          secondary: "#40ad94",
-          accent: "#ff8d66", //#E9BF56;
-          positive: "#4fcb78",
-          negative: "#ff3b3b",
-          background: "#f5f8fa", //#F5F8FA;
+          burnt: "#D2801E",
         },
       },
       rotate: {
@@ -73,6 +80,14 @@ module.exports = {
         "5/7": "71.4285714%",
         "6/7": "85.7142857%",
       },
+      maxWidth: {
+        "1/7": "14.2857143%",
+        "2/7": "28.5714286%",
+        "3/7": "42.8571429%",
+        "4/7": "57.1428571%",
+        "5/7": "71.4285714%",
+        "6/7": "85.7142857%",
+      },
     },
   },
   variants: {
@@ -83,13 +98,7 @@ module.exports = {
     opacity: ["responsive", "hover", "active", "focus", "group-hover"],
     filter: ["responsive"],
     backdropFilter: ["responsive"],
-    backgroundOpacity: [
-      "responsive",
-      "hover",
-      "active",
-      "group-hover",
-      "focus",
-    ],
+    backgroundOpacity: ["responsive", "hover", "active", "group-hover", "focus"],
   },
   plugins: [
     require("@tailwindcss/forms"),
