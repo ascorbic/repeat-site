@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 
 const Stats = ({ stats }) => {
+  stats = stats || {
+    header: "",
+    stats: [],
+  };
   return (
     <div className="container max-w-screen-lg m-auto">
       <h3 className="font-bold text-2xl">{stats.header}</h3>
