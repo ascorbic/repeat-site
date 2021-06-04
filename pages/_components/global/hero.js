@@ -9,8 +9,8 @@ const RepeatHero = ({ bgImage, headerText, subheaderText }) => {
     >
       <div className="container max-w-screen-lg h-full m-auto">
         <div className="flex h-full items-end">
-          <div className="py-8 w-3/4">
-            <h1 className="text-7xl pb-8 font-extrabold">{headerText}</h1>
+          <div className="md:px-0 px-2 py-8 w-full md:w-3/4">
+            <h1 className="text-4xl md:text-7xl pb-8 font-extrabold">{headerText}</h1>
             <h2 className="text-md w-4/5 pb-8">{subheaderText}</h2>
           </div>
         </div>

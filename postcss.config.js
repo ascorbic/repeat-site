@@ -4,10 +4,7 @@ if (process.env.NODE_ENV != "development") {
   plugins.push([
     "@fullhuman/postcss-purgecss",
     {
-      content: [
-        "./src/pages/**/*.{js,jsx,ts,tsx}",
-        "./src/components/**/*.{js,jsx,ts,tsx}",
-      ],
+      content: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
       safelist: [
         "text-gray-500",
         "text-gray-800",
