@@ -25,6 +25,11 @@ module.exports = {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: (theme) => ({
+        "media-vox": "url('/images/vox-media.png')",
+        "media-washington-post": "url('/images/washington-post.png')",
+        "media-new-york-times": "url('/images/new-york-times.png')",
+      }),
       opacity: {
         10: "0.1",
         15: "0.15",
@@ -44,6 +49,7 @@ module.exports = {
 
       colors: {
         repeat: {
+          black: "#323438",
           dark: "#7C7C7C",
           neutral: "#C4C4C4",
           light: "#F3EEE5",
@@ -67,6 +73,14 @@ module.exports = {
         "zoom-in": "zoom-in",
       },
       width: {
+        "1/7": "14.2857143%",
+        "2/7": "28.5714286%",
+        "3/7": "42.8571429%",
+        "4/7": "57.1428571%",
+        "5/7": "71.4285714%",
+        "6/7": "85.7142857%",
+      },
+      maxWidth: {
         "1/7": "14.2857143%",
         "2/7": "28.5714286%",
         "3/7": "42.8571429%",

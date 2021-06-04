@@ -2,6 +2,7 @@ import React from "react";
 import RepeatHero from "../global/hero";
 import SectionHeader from "../global/section-header";
 import Stats from "../global/stats";
+import InTheMedia from "../global/in-the-media";
 
 let stats = {
   header: "The Biden Administration Climate Program",
@@ -106,6 +107,8 @@ const RepeatLanding = () => {
         </div>
         <a className="text-sm font-bold inline-block pt-5 border-b-2 border-black">Read More &gt;</a>
       </div>
+
+      <InTheMedia />
     </React.Fragment>
   );
 };

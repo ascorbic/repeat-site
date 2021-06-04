@@ -4,7 +4,7 @@ import Head from "next/head";
 const RepeatHero = ({ bgImage, headerText, subheaderText }) => {
   return (
     <div
-      className="bg-center h-screen/1.3 bg-cover bg-no-repeat text-white"
+      className="bg-center bg-fixed h-screen/1.3 bg-cover bg-no-repeat text-white"
       style={{ backgroundImage: "url(https://source.unsplash.com/1600x900/?plains,windmill)" }}
     >
       <div className="container max-w-screen-lg h-full m-auto">
