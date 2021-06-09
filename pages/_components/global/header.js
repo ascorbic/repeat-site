@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
+import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import {
   BookmarkAltIcon,
@@ -76,18 +77,20 @@ function classNames(...classes) {
 
 export default function RepeatHeader() {
   return (
-    <Popover className="fixed w-screen top-0 border-t-8 border-black bg-black bg-opacity-75">
+    <Popover className="fixed w-screen top-0 border-t-8 border-black bg-black bg-opacity-75 z-50">
       {({ open }) => (
         <>
           <div className="container max-w-screen-lg mx-auto pt-4 md:px-1 sm:px-6">
             <div className="flex justify-between items-center md:pt-6 pb-4 md:justify-start md:space-x-10">
               <div className="flex justify-start pl-2 md:pl-0 lg:w-0 lg:flex-1">
-                <a href="#">
-                  <span className="text-repeat text-xl font-bold">REPEAT</span>
-                  <span className="text-repeat-light text-xs md:text-sm md:pl-3 md:inline-block block">
-                    Rapid Energy Policy Evaluation and Analysis Toolkit
-                  </span>
-                </a>
+                <Link href="/">
+                  <a href="/">
+                    <span className="text-repeat text-xl font-bold">REPEAT</span>
+                    <span className="text-repeat-light text-xs md:text-sm md:pl-3 md:inline-block block">
+                      Rapid Energy Policy Evaluation and Analysis Toolkit
+                    </span>
+                  </a>
+                </Link>
               </div>
               <div className="pr-2 -mt-4 md:hidden">
                 <Popover.Button className="p-2 inline-flex items-center justify-center text-repeat hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
@@ -96,12 +99,14 @@ export default function RepeatHeader() {
                 </Popover.Button>
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
-                <a
-                  href="#"
-                  className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat"
-                >
-                  About
-                </a>
+                <Link href="about">
+                  <a
+                    href="about"
+                    className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat"
+                  >
+                    About
+                  </a>
+                </Link>
                 <Popover className="relative">
                   {({ open }) => (
                     <>
@@ -128,7 +133,7 @@ export default function RepeatHeader() {
                       >
                         <Popover.Panel
                           static
-                          className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                          className="absolute z-50 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                         >
                           <div className="overflow-hidden">
                             <div className="relative grid gap-3 bg-white px-3 py-3 sm:gap-4 sm:p-4">
