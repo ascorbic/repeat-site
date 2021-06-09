@@ -23,7 +23,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        sans: ["effra", ...defaultTheme.fontFamily.sans],
+        effra: ["effra", "sans-serif"], // body Text
+        obliqua: ["obliqua", "sans-serif"],
+        utopia: ["utopia-std", "serif"], // Hero Text
       },
       backgroundImage: (theme) => ({
         "media-vox": "url('/images/vox-media.png')",
