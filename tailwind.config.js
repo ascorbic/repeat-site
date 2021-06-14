@@ -23,12 +23,23 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        sans: ["effra", ...defaultTheme.fontFamily.sans],
+        effra: ["effra", "sans-serif"], // body Text
+        obliqua: ["obliqua", "sans-serif"],
+        utopia: ["utopia-std", "serif"], // Hero Text
+      },
+      backgroundPosition: {
+        "repeat-right-top": "right 20rem top 7rem",
       },
       backgroundImage: (theme) => ({
         "media-vox": "url('/images/vox-media.png')",
         "media-washington-post": "url('/images/washington-post.png')",
         "media-new-york-times": "url('/images/new-york-times.png')",
+        "home-cover": "url('/images/home-cover.svg')",
+        "about-cover": "url('/images/about-cover.svg')",
+        "media-cover": "url('/images/media-cover.svg')",
+        "policies-cover": "url('/images/policies-cover.svg')",
+        "policy-background": "url('/images/policy-background.svg')",
       }),
       opacity: {
         10: "0.1",
@@ -46,9 +57,16 @@ module.exports = {
         "screen/1.5": "66.667vh",
         "screen/1.3": "75vh",
       },
-
+      gridColumn: {
+        "span-14": "span 14 / span 14",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        14: "repeat(14, minmax(0, 1fr))",
+      },
       colors: {
         repeat: {
+          teal: "#325d6b",
           black: "#323438",
           dark: "#7C7C7C",
           neutral: "#C4C4C4",
@@ -100,10 +118,5 @@ module.exports = {
     backdropFilter: ["responsive"],
     backgroundOpacity: ["responsive", "hover", "active", "group-hover", "focus"],
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
-    require("tailwindcss-filters"),
-  ],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require("@tailwindcss/aspect-ratio"), require("tailwindcss-filters")],
 };
