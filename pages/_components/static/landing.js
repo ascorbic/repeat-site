@@ -29,20 +29,13 @@ let stats = {
 const RepeatLanding = () => {
   return (
     <React.Fragment>
-      <RepeatHero
-        headerText="Data Driven Climate Policy Evaluation"
-        subheaderText="Compiled by the Princeton Zero Lab to put granular analysis in the hands of policy makers, media and the general public."
-      />
+      <RepeatHero mode="dark" backgroundClass="bg-home-cover bg-center bg-fixed bg-cover bg-no-repeat" headerText="Data Driven Climate Policy Evaluation" subheaderText="Compiled by the Princeton Zero Lab to put granular analysis in the hands of policy makers, media and the general public." />
 
       <div className="container max-w-screen-lg py-20 m-auto">
         <div className="md:w-1/2">
           <p>
-            The Princeton ZERO Lab and Net-Zero America study team have developed a suite of geospatial planning tools
-            coupled with detailed macro-energy system optimization models capable of rapidly evaluating policy and
-            regulatory proposals at politically-relevant spatial resolutions (e.g., state, county, and sometimes finer
-            resolutions). This includes evaluation of candidate sites for wind and solar development, thermal power
-            plant siting and repowering, and transmission expansion as well as associated impacts on air quality and
-            labor/employment.
+            The Princeton ZERO Lab and Net-Zero America study team have developed a suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapidly evaluating policy and regulatory proposals at politically-relevant spatial resolutions (e.g., state, county, and sometimes finer resolutions). This includes evaluation of candidate sites for wind and solar development, thermal power plant siting and repowering, and transmission expansion as well as
+            associated impacts on air quality and labor/employment.
           </p>
         </div>
         <div className="md:w-full py-20">
@@ -64,46 +57,27 @@ const RepeatLanding = () => {
                 <span className="inline-block font-bold">Population Density &lt; 100 people per sq. mi</span>
               </div>
               <div className="block pt-3">
-                <i>
-                  A suite of geospatial planning tools coupled with detailed macro-energy system optimization models
-                  capable of rapid evaluation.
-                </i>
+                <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
               </div>
             </div>
           </div>
         </div>
         <div className="md:w-1/2">
           <p>
-            These tools were employed to great impact in the <b>Net-Zero America</b> study, which “set an entirely new
-            standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in
-            its results, according to John Holdren, former Science Advisor to President Obama and Director of the White
-            House Office of Science and Technology Policy. The spatially-explicit and granular results and associated
-            maps have proven to be highly relevant to a wide range of stakeholders and decision makers, and the
-            responses to the report indicate the desire for more politically-salient outputs from energy systems models.
+            These tools were employed to great impact in the <b>Net-Zero America</b> study, which “set an entirely new standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in its results, according to John Holdren, former Science Advisor to President Obama and Director of the White House Office of Science and Technology Policy. The spatially-explicit and granular results and associated maps have proven to be highly relevant to a wide range of
+            stakeholders and decision makers, and the responses to the report indicate the desire for more politically-salient outputs from energy systems models.
           </p>
-          <p className="pt-6">
-            The Princeton ZERO Lab proposes to further develop and refine this suite of geospatially-granular planning,
-            modeling, and visualization tools and employ them to rapidly evaluate federal policy proposals, providing
-            independent, timely, and credible information and analysis for broad educational purposes, including as a
-            resource available publicly for stakeholders, decision-makers, and the media.
-          </p>
+          <p className="pt-6">The Princeton ZERO Lab proposes to further develop and refine this suite of geospatially-granular planning, modeling, and visualization tools and employ them to rapidly evaluate federal policy proposals, providing independent, timely, and credible information and analysis for broad educational purposes, including as a resource available publicly for stakeholders, decision-makers, and the media.</p>
         </div>
       </div>
 
-      <SectionHeader
-        headerText="evaluate the policies"
-        subheaderText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project."
-      />
+      <SectionHeader headerText="evaluate the policies" subheaderText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project." />
 
       <Stats stats={stats} />
 
       <div className="container max-w-screen-lg py-10 m-auto">
         <div className="md:w-1/2">
-          <p>
-            Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-            nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-            augue duis dolore te feugait nulla.
-          </p>
+          <p>Vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
         </div>
         <a className="text-sm font-bold inline-block pt-5 border-b-2 border-black">Read More &gt;</a>
       </div>
