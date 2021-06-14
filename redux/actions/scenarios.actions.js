@@ -32,7 +32,7 @@ const getScenarios = async () => {
     headers: headers,
     redirect: "follow",
   };
-  const results = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/scenarios`, requestOptions);
+  const results = await fetch(`/api/scenarios`, requestOptions);
   if (results.status === 200) return await results.json();
   throw results;
 };
