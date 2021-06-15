@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RepeatHero from "./global/hero";
 import ExploreLoader from "./explore/loader";
-
+import ImageCarousel from "./global/image-carousel";
 import Stats from "./global/stats";
 const graphic1 = {
   header: "Policy Score Card",
@@ -66,6 +66,43 @@ const graphic3 = {
     },
   ],
 };
+
+const slides = [
+  {
+    image: "/images/carousel-image-1.svg",
+    caption: (
+      <div>
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p>Solar, Wind and Population Density</p>
+      </div>
+    ),
+  },
+  {
+    image: "/images/carousel-image-2.svg",
+    caption: "some caption",
+  },
+  {
+    image: "/images/carousel-image-3.svg",
+    caption: "some caption",
+  },
+  {
+    image: "/images/carousel-image-2.svg",
+    caption: "some caption",
+  },
+  {
+    image: "/images/carousel-image-3.svg",
+    caption: "some caption",
+  },
+  {
+    image: "/images/carousel-image-2.svg",
+    caption: "some caption",
+  },
+  {
+    image: "/images/carousel-image-3.svg",
+    caption: "some caption",
+  },
+];
+
 const policies = {
   "biden-administration-plan": {
     header: "The Biden Administration Climate Program",
@@ -82,7 +119,11 @@ const policies = {
       },
       {
         type: "component",
-        content: <div className="bg-repeat-light py-20 text-center text-white rounded-xl text-3xl">Image Carousel placeholder</div>,
+        content: (
+          <div className="py-20 text-repeat-black rounded-xl">
+            <ImageCarousel slides={slides} />
+          </div>
+        ),
       },
       {
         type: "paragraph",

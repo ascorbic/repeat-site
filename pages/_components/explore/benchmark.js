@@ -46,9 +46,9 @@ const ExploreFilter = () => {
     );
   };
 
-  const tableRow = (scenario) => {
+  const tableRow = (scenario, i) => {
     return (
-      <>
+      <div key={i}>
         <div className="col-span-2">{scenario.variable_name}</div>
         <div className="col-span-2">{scenario.value}</div>
         <div className="">{scenario.value}</div>
@@ -59,7 +59,7 @@ const ExploreFilter = () => {
         <div className="col-span-2"></div>
         <div className="">{scenario.value}</div>
         <div className="">{scenario.value}</div>
-      </>
+      </div>
     );
   };
 
@@ -67,7 +67,7 @@ const ExploreFilter = () => {
     <div className="relative overflow-auto h-96 text-xs">
       {tableHeader()}
       <div className="">
-        <div className="grid grid-cols-14">{scenarios.map((scenario) => tableRow(scenario))}</div>
+        <div className="grid grid-cols-14">{scenarios.map((scenario, i) => tableRow(scenario, i))}</div>
       </div>
     </div>
   );
