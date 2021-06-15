@@ -1,6 +1,8 @@
 import React from "react";
 import RepeatHero from "../global/hero";
-
+import SectionHeader from "../global/section-header";
+import InTheMedia from "../global/in-the-media";
+import Stats from "../global/stats";
 const team = [
   {
     name: "Hugo Ackerson",

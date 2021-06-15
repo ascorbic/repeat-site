@@ -58,12 +58,14 @@ export default class PreviousNextMethods extends Component {
         </span>
         <h2>{this.props.header}</h2>
         <Slider ref={(c) => (this.slider = c)} {...settings}>
-          {this.props.slides.map((slide, i) => (
-            <div className="px-2" key={i}>
-              <img src={slide.image} alt="" />
-              <div>{slide.caption}</div>
-            </div>
-          ))}
+          {this.props.slides
+            ? this.props.slides.map((slide, i) => (
+                <div className="px-2" key={i}>
+                  <img src={slide.image} alt="" />
+                  <div>{slide.caption}</div>
+                </div>
+              ))
+            : null}
         </Slider>
       </div>
     );
