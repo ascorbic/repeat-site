@@ -71,35 +71,65 @@ const slides = [
   {
     image: "/images/carousel-image-1.svg",
     caption: (
-      <div>
+      <div className="py-2">
         <h4 className="font-bold">2030 E+ Cumulative</h4>
-        <p>Solar, Wind and Population Density</p>
+        <p className="text-xs">Solar, Wind and Population Density</p>
       </div>
     ),
   },
   {
     image: "/images/carousel-image-2.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
   {
     image: "/images/carousel-image-3.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
   {
     image: "/images/carousel-image-2.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
   {
     image: "/images/carousel-image-3.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
   {
     image: "/images/carousel-image-2.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
   {
     image: "/images/carousel-image-3.svg",
-    caption: "some caption",
+    caption: (
+      <div className="py-2">
+        <h4 className="font-bold">2030 E+ Cumulative</h4>
+        <p className="text-xs">Solar, Wind and Population Density</p>
+      </div>
+    ),
   },
 ];
 
@@ -120,7 +150,7 @@ const policies = {
       {
         type: "component",
         content: (
-          <div className="py-20 text-repeat-black rounded-xl">
+          <div className="py-6 text-repeat-black rounded-xl">
             <ImageCarousel slides={slides} />
           </div>
         ),
