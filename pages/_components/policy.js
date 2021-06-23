@@ -198,7 +198,7 @@ const RepeatPolicy = ({ policy }) => {
         {activePolicy.contentBlocks.map((block, i) => {
           if (block.type === "paragraph")
             return (
-              <div key={i} className="md:w-1/2 pb-5">
+              <div key={i} className="md:w-1/2 pb-5 text-repeat-black">
                 <p>{block.content}</p>
               </div>
             );

@@ -27,6 +27,12 @@ body {
     opacity: 1;
 }
 
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 1.75rem;
+  }
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;

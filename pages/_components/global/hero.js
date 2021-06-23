@@ -3,8 +3,8 @@ import Head from "next/head";
 
 const RepeatHero = ({ backgroundClass, headerText, subheaderText, mode }) => {
   let coverClass = mode === "dark" ? `h-screen/1.3 ${backgroundClass}` : `bg-fixed h-screen/1.3 text-repeat-teal ${backgroundClass}`;
-  let headerClass = mode === "dark" ? "text-4xl md:text-6xl pb-8 font-extrabold font-obliqua text-white" : "text-4xl md:text-6xl pb-8 font-extrabold font-obliqua text-repeat-teal";
-  let subHeaderClass = mode === "dark" ? "text-md w-4/5 pb-8 text-xl font-utopia text-white" : "text-md w-4/5 pb-8 text-xl font-utopia text-repeat-burnt";
+  let headerClass = mode === "dark" ? "text-4xl md:text-7xl pb-8 font-extrabold font-obliqua text-white" : "text-4xl md:text-6xl pb-8 font-extrabold font-obliqua text-repeat-teal";
+  let subHeaderClass = mode === "dark" ? "text-md w-4/5 pb-3 text-2xl font-utopia text-white" : "text-md w-4/5 pb-8 text-xl font-utopia text-repeat-burnt";
   return (
     <div className={coverClass}>
       <div className="container max-w-screen-lg h-full m-auto">
