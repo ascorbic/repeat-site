@@ -12,7 +12,7 @@ const getFilters = async () => {
     headers: headers,
     redirect: "follow",
   };
-  const results = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/filters`, requestOptions);
+  const results = await fetch(`/api/filters`, requestOptions);
   if (results.status === 200) return await results.json();
   throw results;
 };

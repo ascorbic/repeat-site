@@ -21,6 +21,11 @@ body {
 .font-forum {
   font-family: "Forum-Regular";
 }
+.slick-next:before, .slick-prev:before {
+  font-size: 57px;
+    line-height: 1;
+    opacity: 1;
+}
 
 /* purgecss end ignore */
 
