@@ -58,11 +58,11 @@ const RepeatAbout = () => {
   return (
     <React.Fragment>
       <RepeatHero backgroundClass="bg-about-cover bg-center bg-fixed bg-cover bg-no-repeat" />
-      <div className="w-screen -mt-20 text-repeat-black">
+      <div className="w-screen -mt-40 text-repeat-black text-lg">
         <div className="container pl-20 max-w-screen-lg bg-white rounded-tr-2xl border-t-4 border-repeat">
-          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-40">
-            <h2 className="md:text-3xl pt-8 font-extrabold font-obliqua">A New Tool for Evaluating Climate Policy</h2>
-            <p className="font-utopia pt-6 text-repeat-burnt">Maintained by the Princeton Zero Lab, the REPEAT Project provides environmental and economic evaluation of climate policies as they’re proposed.</p>
+          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-8">
+            <h2 className="md:text-5xl pt-8 font-extrabold font-obliqua">A New Tool for Evaluating Climate Policy</h2>
+            <p className="font-utopia pt-6 md:w-4/5 text-repeat-burnt">Maintained by the Princeton Zero Lab, the REPEAT Project provides environmental and economic evaluation of climate policies as they’re proposed.</p>
             <div className="pt-8 inline-block">
               <div className="block text-3xl border-4 border-repeat text-center py-5 font-mono relative">
                 <div className="block -top-6 w-full absolute">
