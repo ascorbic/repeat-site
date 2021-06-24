@@ -7,32 +7,33 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const pages = [
   {
-    name: "About",
-    icon: ChartBarIcon,
-    href: "/about",
-  },
-  {
     name: "Policy",
     icon: CursorClickIcon,
     href: "/policy",
+  },
+  {
+    name: "About",
+    icon: ChartBarIcon,
+    href: "/about",
   },
   {
     name: "Media",
     icon: ViewGridIcon,
     href: "/media",
   },
-  {
+  /*{
     name: "NZAP",
     icon: RefreshIcon,
     target: "blank",
     href: "https://netzeroamerica.princeton.edu",
-  },
+  },*/
 ];
 const policies = [
   {
     name: "Biden Administration Plan",
     icon: ChartBarIcon,
   },
+  /*
   {
     name: "CRES Climate Agenda",
     icon: CursorClickIcon,
@@ -45,6 +46,7 @@ const policies = [
     name: "Green New Deal",
     icon: RefreshIcon,
   },
+  */
 ].map((e) => ({ ...e, href: "/policies/" + e.name.replace(/ /gi, "-").toLocaleLowerCase() }));
 
 function classNames(...classes) {
@@ -61,8 +63,8 @@ export default function RepeatHeader() {
               <div className="flex justify-start pl-2 md:pl-0 lg:w-0 lg:flex-1">
                 <Link href="/">
                   <a href="/">
-                    <span className="text-repeat text-xl font-bold">REPEAT</span>
-                    <span className="text-repeat-light text-xs md:text-sm md:pl-3 md:inline-block block">Rapid Energy Policy Evaluation and Analysis Toolkit</span>
+                    <span className="text-repeat text-2xl font-bold">REPEAT</span>
+                    <span className="text-repeat-light text-sm md:text-base md:pl-3 md:inline-block block">Rapid Energy Policy Evaluation and Analysis Toolkit</span>
                   </a>
                 </Link>
               </div>
@@ -111,9 +113,9 @@ export default function RepeatHeader() {
                     Media
                   </a>
                 </Link>
-                <a href="https://netzeroamerica.princeton.edu" target="blank" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
+                {/* <a href="https://netzeroamerica.princeton.edu" target="blank" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
                   NZAP
-                </a>
+                              </a> */}
               </Popover.Group>
             </div>
           </div>

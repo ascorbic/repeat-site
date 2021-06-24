@@ -5,7 +5,7 @@ import ImageCarousel from "./global/image-carousel";
 import Stats from "./global/stats";
 import Pillars from "./global/pillars";
 const graphic1 = {
-  header: "Policy Score Card",
+  header: "Policy Scorecard",
   background: "",
   stats: [
     {
@@ -149,7 +149,11 @@ const policies = {
         content: <Stats stats={graphic1} />,
       },
       {
-        type: "component",
+        type: "heading",
+        content: "Details & Resources",
+      },
+      {
+        type: "slider",
         content: (
           <div className="py-6 text-repeat-black rounded-xl">
             <ImageCarousel slides={slides} />
@@ -185,7 +189,7 @@ const RepeatPolicy = ({ policy }) => {
   return activePolicy ? (
     <div className="bg-policy-background bg-repeat-right-top bg-no-repeat">
       <RepeatHero headerText={activePolicy.header} subheaderText={activePolicy.subHeader} bg="" />
-      <div className="container max-w-screen-lg pb-20 m-auto">
+      <div className="container max-w-screen-lg pb-8 m-auto">
         {activePolicy.contentBlocks.map((block, i) => {
           if (block.type === "paragraph")
             return (
@@ -199,6 +203,12 @@ const RepeatPolicy = ({ policy }) => {
                 {block.content}
               </div>
             );
+          if (block.type === "slider")
+          return (
+            <div key={i} className="md:w-full pt-5 pb-10">
+              {block.content}
+            </div>
+          );  
           if (block.type === "pillars")
           return (
             <div key={i} className="md:w-full py-0">
@@ -208,7 +218,7 @@ const RepeatPolicy = ({ policy }) => {
           if (block.type === "heading")
             return (
               <div key={i} className="md:w-1/2 pt-2">
-                <h3 className="text-lg font-bold mb-3">{block.content}</h3>
+                <h3 className="text-lg font-bold text-repeat-teal text-3xl mb-5">{block.content}</h3>
               </div>
             );
         })}

@@ -58,8 +58,8 @@ const RepeatAbout = () => {
   return (
     <React.Fragment>
       <RepeatHero backgroundClass="bg-about-cover bg-center bg-fixed bg-cover bg-no-repeat" />
-      <div className="w-screen -mt-40 text-repeat-black text-lg">
-        <div className="container pl-20 max-w-screen-lg bg-white rounded-tr-2xl border-t-4 border-repeat">
+      <div className="max-w-screen-xl m-auto mx-0 -mt-40 text-repeat-black text-lg">
+        <div className="container subpages max-w-screen-lg bg-white rounded-tr-2xl border-t-4 border-repeat">
           <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-8">
             <h2 className="md:text-5xl pt-8 font-extrabold font-obliqua">A New Tool for Evaluating Climate Policy</h2>
             <p className="font-utopia pt-6 md:w-4/5 text-repeat-burnt">Maintained by the Princeton Zero Lab, the REPEAT Project provides environmental and economic evaluation of climate policies as they’re proposed.</p>
@@ -88,10 +88,12 @@ const RepeatAbout = () => {
         </div>
       </div>
 
-      <div className="w-screen text-repeat-black">
-        <div className="container pl-20 max-w-screen pb-10 pr-10">
-          <div className="md:w-100 pt-10 px-8 md:px-0 md:pl-20">
-            <div className="grid pl-10 grid-cols-4 gap-20">
+{/* Team */ }
+
+      <div className="max-w-screen-xl text-repeat-black">
+        <div className="container subpages max-w-screen-lg m-auto pb-10">
+          <div className="md:w-100 pt-10 px-8 md:px-0">
+            <div className="grid grid-cols-4 gap-20">
               {team.map((member) => (
                 <div key={member.name} className="py-2 px-3 text-center">
                   <img className="w-full rounded-full" src={`images/${member.name.split(" ").join("-").toLocaleLowerCase()}.svg`} alt={member.name} />
@@ -106,8 +108,8 @@ const RepeatAbout = () => {
         </div>
       </div>
 
-      <div className="w-screen text-repeat-black pb-20">
-        <div className="container pl-40 max-w-screen-lg bg-white">
+      <div className="max-w-screen-xl m-auto text-repeat-black pb-20">
+        <div className="container subpages max-w-screen-lg bg-white">
           <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-0">
             <div className="md:w-4/5 leading-7 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
@@ -139,8 +141,11 @@ const RepeatAbout = () => {
             </div>
           </div>
         </div> 
-        <div className="container pl-40 max-w-screen-xl bg-white">      
-          <div className="container max-w-screen-xl m-auto px-8 md:px-0 md:pl-12">    
+
+        {/* NZA report image */ }
+
+        <div className="container subpages max-w-screen-xl bg-white">      
+          <div className="container max-w-screen-lg m-auto px-8 md:px-0">    
             <div className="flex h-full items-center">
               <div className="md:w-5/8 leading-7 pt-10 text-lg">
                 <img src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
@@ -151,7 +156,7 @@ const RepeatAbout = () => {
             </div>
           </div>  
         </div>  
-        <div className="container pl-40 max-w-screen-lg bg-white">  
+        <div className="container subpages max-w-screen-lg bg-white">  
           <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-0">
             <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
@@ -160,7 +165,7 @@ const RepeatAbout = () => {
         </div>
       </div>
 
-      <SectionHeader headerText="evaluate the policies" subheaderText="Out data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project." />
+      <SectionHeader headerText="evaluate the policies" subheaderText="Our data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project." />
 
       <Stats stats={stats} />
       <div className="py-8"></div>

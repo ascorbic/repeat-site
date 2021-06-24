@@ -78,17 +78,15 @@ module.exports = {
         },
       },
       borderColor: {
-        
-            'teal': "#325d6b",
-            //black: "#323438",
-            black: "#565656",
-            dark: "#7C7C7C",
-            neutral: "#C4C4C4",
-            light: "#F3EEE5",
-            DEFAULT: "#ED6D0B",
-            primary: "#4059ad",
-            burnt: "#D2801E",
-      
+          teal: "#325d6b",
+          //black: "#323438",
+          black: "#565656",
+          dark: "#7C7C7C",
+          neutral: "#C4C4C4",
+          light: "#F3EEE5",
+          DEFAULT: "#ED6D0B",
+          primary: "#4059ad",
+          burnt: "#D2801E",
       },
       rotate: {
         60: "60deg",

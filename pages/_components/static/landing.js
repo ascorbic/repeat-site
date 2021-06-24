@@ -31,7 +31,7 @@ const RepeatLanding = () => {
     <React.Fragment>
       <RepeatHero mode="dark" backgroundClass="bg-home-cover bg-center bg-fixed bg-cover bg-no-repeat" headerText="Data Driven Climate Policy Evaluation" subheaderText="Compiled by the Princeton Zero Lab to put granular analysis in the hands of policy makers, media and the general public." />
 
-      <div className="container max-w-screen-lg pt-10 pb-20 m-auto text-lg">
+      <div className="container max-w-screen-lg pt-10 pb-20 m-auto text-lg text-repeat-black">
         <div className="md:w-3/5">
           <p>
             The Princeton ZERO Lab and Net-Zero America study team have developed a suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapidly evaluating policy and regulatory proposals at politically-relevant spatial resolutions (e.g., state, county, and sometimes finer resolutions). This includes evaluation of candidate sites for wind and solar development, thermal power plant siting and repowering, and transmission expansion as well as
