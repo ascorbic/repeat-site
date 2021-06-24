@@ -89,7 +89,7 @@ const RepeatAbout = () => {
       </div>
 
       <div className="w-screen text-repeat-black">
-        <div className="container pl-20 max-w-screen pb-10">
+        <div className="container pl-20 max-w-screen pb-10 pr-10">
           <div className="md:w-100 pt-10 px-8 md:px-0 md:pl-20">
             <div className="grid pl-10 grid-cols-4 gap-20">
               {team.map((member) => (
@@ -137,14 +137,22 @@ const RepeatAbout = () => {
               <b>The Net Zero America Project</b>
               <p className="pt-3">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
             </div>
+          </div>
+        </div> 
+        <div className="container pl-40 max-w-screen-xl bg-white">      
+          <div className="container max-w-screen-xl m-auto px-8 md:px-0 md:pl-12">    
             <div className="flex h-full items-center">
-            <div className="md:w-4/5 leading-7 pt-10 text-lg">
-              <img src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
+              <div className="md:w-5/8 leading-7 pt-10 text-lg">
+                <img class="mr-0" src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
+              </div>
+              <div className="md:w-1/4 font-utopia pl-7 pt-3">
+                <i>The Net-Zero America study “set an entirely new standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in its results.</i>
+              </div>
             </div>
-              <div className="md:w-1/5 font-utopia pt-3">
-                <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
-              </div>
-              </div>
+          </div>  
+        </div>  
+        <div className="container pl-40 max-w-screen-lg bg-white">  
+          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-0">
             <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
             </div>
