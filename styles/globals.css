@@ -9,6 +9,12 @@ body {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 768px) {
+  h2.md\:text-5xl {
+    line-height: 1.2;
+  }
+}
+
 @font-face {
   font-family: "Forum-Regular";
   font-style: normal;
@@ -18,6 +24,10 @@ body {
     url("/font-files/Forum-Regular.woff") format("woff2");
 }
 
+.bg-policy-background {
+  background-size: 38%;
+}
+
 .font-forum {
   font-family: "Forum-Regular";
 }
@@ -25,6 +35,12 @@ body {
   font-size: 57px;
     line-height: 1;
     opacity: 1;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 1.75rem;
+  }
 }
 
 /* purgecss end ignore */
