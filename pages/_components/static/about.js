@@ -90,8 +90,8 @@ const RepeatAbout = () => {
 
       <div className="w-screen text-repeat-black">
         <div className="container pl-20 max-w-screen pb-10">
-          <div className="md:w-3/4 pt-10 px-8 md:px-0 md:pl-60">
-            <div className="grid pl-10 grid-cols-4 gap-5">
+          <div className="md:w-100 pt-10 px-8 md:px-0 md:pl-20">
+            <div className="grid pl-10 grid-cols-4 gap-20">
               {team.map((member) => (
                 <div key={member.name} className="py-2 px-3 text-center">
                   <img className="w-full rounded-full" src={`images/${member.name.split(" ").join("-").toLocaleLowerCase()}.svg`} alt={member.name} />
@@ -107,9 +107,9 @@ const RepeatAbout = () => {
       </div>
 
       <div className="w-screen text-repeat-black pb-20">
-        <div className="container pl-20 max-w-screen-lg bg-white">
-          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-40">
-            <div className="md:w-4/5 leading-7">
+        <div className="container pl-40 max-w-screen-lg bg-white">
+          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-0">
+            <div className="md:w-4/5 leading-7 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
               <p className="pt-3">Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
             </div>
@@ -118,31 +118,34 @@ const RepeatAbout = () => {
               <img src="images/evolved-energy-research.svg" alt="" />
             </div>
 
-            <div className="md:w-4/5 leading-7 pt-10">
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <b>Evolved Energy Research</b>
               <p className="pt-3">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
             </div>
 
-            <div className="md:w-4/5 leading-7 pt-10">
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <b>Carbon Impact Consulting</b>
               <p className="pt-3">Greg Schivley dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
             </div>
 
-            <div className="md:w-4/5 leading-7 pt-10">
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <b>Montara Mountain Energy</b>
               <p className="pt-3">Greg Schivley dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
             </div>
 
-            <div className="md:w-4/5 leading-7 pt-10">
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <b>The Net Zero America Project</b>
               <p className="pt-3">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
             </div>
-
-            <div className="md:w-4/5 leading-7 pt-10">
+            <div className="flex h-full items-center">
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <img src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
             </div>
-
-            <div className="md:w-4/5 leading-7 pt-10">
+              <div className="md:w-1/5 font-utopia pt-3">
+                <i>A suite of geospatial planning tools coupled with detailed macro-energy system optimization models capable of rapid evaluation.</i>
+              </div>
+              </div>
+            <div className="md:w-4/5 leading-7 pt-10 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
             </div>
           </div>
