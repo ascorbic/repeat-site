@@ -29,7 +29,7 @@ module.exports = {
         utopia: ["utopia-std", "serif"], // Hero Text
       },
       backgroundPosition: {
-        "repeat-right-top": "right 20rem top 7rem",
+        "repeat-right-top": "right 16rem top 9rem",
       },
       backgroundImage: (theme) => ({
         "media-vox": "url('/images/vox-media.png')",
@@ -39,7 +39,7 @@ module.exports = {
         "about-cover": "url('/images/about-cover.jpg')",
         "media-cover": "url('/images/media-cover.jpg')",
         "policies-cover": "url('/images/policies-cover.jpg')",
-        "policy-background": "url('/images/policy-background.svg')",
+        "policy-background": "url('/images/policy-background.jpg')",
       }),
       opacity: {
         10: "0.1",
@@ -67,7 +67,8 @@ module.exports = {
       colors: {
         repeat: {
           teal: "#325d6b",
-          black: "#323438",
+          //black: "#323438",
+          black: "#565656",
           dark: "#7C7C7C",
           neutral: "#C4C4C4",
           light: "#F3EEE5",
@@ -75,6 +76,19 @@ module.exports = {
           primary: "#4059ad",
           burnt: "#D2801E",
         },
+      },
+      borderColor: {
+        
+            'teal': "#325d6b",
+            //black: "#323438",
+            black: "#565656",
+            dark: "#7C7C7C",
+            neutral: "#C4C4C4",
+            light: "#F3EEE5",
+            DEFAULT: "#ED6D0B",
+            primary: "#4059ad",
+            burnt: "#D2801E",
+      
       },
       rotate: {
         60: "60deg",

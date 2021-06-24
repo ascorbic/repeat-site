@@ -3,6 +3,7 @@ import RepeatHero from "./global/hero";
 import ExploreLoader from "./explore/loader";
 import ImageCarousel from "./global/image-carousel";
 import Stats from "./global/stats";
+import Pillars from "./global/pillars";
 const graphic1 = {
   header: "Policy Score Card",
   background: "",
@@ -169,18 +170,8 @@ const policies = {
         content: "Nulla luctus magna aliquam lectus eleifend tincidunt. Fusce mauris nisl, blandit eget porttitor in, ultricies vitae neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
       },
       {
-        type: "component",
-        content: <Stats stats={graphic3} />,
-      },
-      {
-        type: "paragraph",
-        content:
-          "Sed hendrerit nibh non enim scelerisque mattis. Proin vel risus diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus accumsan urna eget enim varius scelerisque. Nam interdum neque non ex sagittis molestie. Nullam sed nisi id justo suscipit dapibus eget ac lectus. In placerat semper urna at vehicula. Nullam suscipit leo ipsum, sed convallis neque imperdiet id. Suspendisse sit amet malesuada quam. Quisque scelerisque vitae odio a consequat. Pellentesque rutrum diam facilisis congue malesuada. Duis nisi nulla, maximus aliquet consequat et, auctor vel eros.",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Donec ut ipsum ac mauris ullamcorper facilisis eget quis odio. Nulla facilisi. Maecenas efficitur dolor eget venenatis rutrum. Mauris porttitor lacinia egestas. Mauris ut molestie metus. Donec gravida dolor quis dignissim elementum. Nullam sem tellus, convallis eu velit eget, suscipit mattis risus. Phasellus rhoncus felis a pellentesque vulputate. Duis vitae justo non erat maximus lobortis et nec est. Aenean consequat arcu sed mi tempor tincidunt. Phasellus nec ex vitae urna tristique ultrices sed non nulla. Pellentesque posuere felis at egestas viverra. Pellentesque at gravida nulla, ac pharetra nulla. Donec et dui quis nisl commodo faucibus. Suspendisse elementum eleifend condimentum.",
+        type: "pillars",
+        content: <Pillars />,
       },
     ],
   },
@@ -198,7 +189,7 @@ const RepeatPolicy = ({ policy }) => {
         {activePolicy.contentBlocks.map((block, i) => {
           if (block.type === "paragraph")
             return (
-              <div key={i} className="md:w-1/2 pb-5 text-repeat-black">
+              <div key={i} className="md:w-1/2 pb-5 text-lg text-repeat-black">
                 <p>{block.content}</p>
               </div>
             );
@@ -208,10 +199,16 @@ const RepeatPolicy = ({ policy }) => {
                 {block.content}
               </div>
             );
+          if (block.type === "pillars")
+          return (
+            <div key={i} className="md:w-full py-0">
+              {block.content}
+            </div>
+          );  
           if (block.type === "heading")
             return (
               <div key={i} className="md:w-1/2 pt-2">
-                <h3 className="text-lg font-bold">{block.content}</h3>
+                <h3 className="text-lg font-bold mb-3">{block.content}</h3>
               </div>
             );
         })}

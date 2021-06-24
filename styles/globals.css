@@ -24,6 +24,10 @@ body {
     url("/font-files/Forum-Regular.woff") format("woff2");
 }
 
+.bg-policy-background {
+  background-size: 38%;
+}
+
 .font-forum {
   font-family: "Forum-Regular";
 }

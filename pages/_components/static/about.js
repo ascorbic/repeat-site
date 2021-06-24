@@ -143,7 +143,7 @@ const RepeatAbout = () => {
           <div className="container max-w-screen-xl m-auto px-8 md:px-0 md:pl-12">    
             <div className="flex h-full items-center">
               <div className="md:w-5/8 leading-7 pt-10 text-lg">
-                <img class="mr-0" src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
+                <img src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
               </div>
               <div className="md:w-1/4 font-utopia pl-7 pt-3">
                 <i>The Net-Zero America study “set an entirely new standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in its results.</i>
