@@ -86,9 +86,9 @@ const RepeatAbout = () => {
   return (
     <React.Fragment>
       <RepeatHero backgroundClass="bg-about-cover bg-center bg-fixed bg-cover bg-no-repeat" />
-      <div className="max-w-screen-xl m-auto mx-0 -mt-40 text-repeat-black text-lg">
-        <div className="container subpages max-w-screen-lg bg-white rounded-tr-2xl border-t-4 border-repeat">
-          <div className="container max-w-screen-md m-auto px-0 md:pl-8">
+      <div className="white-spacer absolute z-0 -mt-40 bg-white border-t-4 hidden sm:block"></div>
+      <div className="max-w-screen-lg m-auto relative z-10 -mt-40 text-repeat-black text-lg">
+        <div className="container subpages lg:w-3/4 bg-white rounded-tr-2xl border-t-4 border-repeat">
             <h2 className="text-2xl md:text-5xl pt-8 font-extrabold font-obliqua">A New Toolkit for Evaluating Energy and Climate Policy</h2>
             <p className="font-utopia pt-6 md:w-4/5 text-repeat-burnt">The REPEAT Project provides regular and timely environmental and economic evaluation of federal energy and climate policies as they’re proposed.</p>
 
@@ -117,15 +117,14 @@ const RepeatAbout = () => {
               <b>Princeton University Zero Lab</b>
               <p className="pt-3">The Princeton Zero-carbon Energy systems Research and Optimization Laboratory (ZERO Lab) conducts research to improve decision-making and accelerate rapid, affordable, and effective transitions to net-zero carbon energy systems. ZERO Lab’s research focuses on improving and applying optimization-based macro-energy systems models to evaluate low-carbon energy technologies and generate insights to guide policy and planning decisions.</p>
             </div>
-          </div>
+          
         </div>
       </div>
 
 {/* Team */ }
 
-      <div className="max-w-screen-xl text-repeat-black">
-        <div className="container subpages max-w-screen-lg m-auto pb-10">
-          <div className="md:w-100 pt-5 px-0">
+      <div className="container max-w-screen-lg m-auto text-repeat-black">
+        <div className="subpages w-100 m-auto pb-10 pt-5 px-0">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20">
               {team.map((member) => (
                 <div key={member.name} className="py-2 px-3 text-center">
@@ -137,13 +136,13 @@ const RepeatAbout = () => {
                 </div>
               ))}
             </div>
-          </div>
         </div>
       </div>
 
-      <div className="max-w-screen-xl m-auto text-repeat-black pb-20">
-        <div className="container subpages max-w-screen-lg bg-white">
-          <div className="container max-w-screen-md m-auto px-0 md:pl-0">
+{/* Organizations */ }
+
+      <div className="container max-w-screen-lg m-auto text-repeat-black pb-20">
+        <div className="subpages lg:w-3/4 bg-white">
             <div className="md:w-4/5 leading-7 text-lg">
               <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
               <p className="pt-3">Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
@@ -172,30 +171,25 @@ const RepeatAbout = () => {
               <b>The Net Zero America Study</b>
               <p className="pt-3">The Princeton Net-Zero America study provides the most detailed and granular analysis of paths to net-zero greenhouse gas emissions in the United States. The study quantified five distinct technological pathways, all using technologies known today, by which the United States could decarbonize its entire economy. With multiple plausible and affordable pathways available, the societal conversation can now turn from “if” to “how” and focus on the choices the nation and its myriad stakeholders wish to make to shape the energy transition. Net-Zero America provides granular guidance to inform these critical choices.</p>
             </div>
-          </div>
         </div> 
 
         {/* NZA report image */ }
 
-        <div className="container subpages max-w-screen-xl bg-white">      
-          <div className="container max-w-screen-lg m-auto px-0">    
-            <div className="flex flex-col md:flex-row h-full items-center">
-              <div className="w-full block md:w-5/8 leading-7 pt-10 text-lg">
+        <div className="max-w-screen-lg m-auto bg-white">      
+            <div className="flex flex-col md:flex-row md:w-5/8 h-full items-center">
+              <div className="w-full block md:w-1/2 leading-7 pt-10 text-lg">
                 <img src="images/Princeton_NZA_Interim_Report_15_Dec_2020.svg" alt="" />
               </div>
-              <div className="w-full block md:w-1/4 font-utopia md:pl-7 pt-3">
+              <div className="w-full block md:w-1/3 font-utopia md:pl-7 pt-3">
                 <i>The Net-Zero America study “set an entirely new standard” in energy transition modeling by offering an “unprecedented degree of clarity and granularity” in its results.</i>
               </div>
             </div>
-          </div>  
         </div>  
-        <div className="container subpages max-w-screen-lg bg-white">  
-          <div className="container max-w-screen-md m-auto px-0 md:pl-0">
-            <div className="md:w-4/5 leading-7 pt-10 text-lg">
-              <p className="pt-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
+        <div className="max-w-screen-lg bg-white">  
+            <div className="md:w-3/4 leading-7 pt-10 text-lg">
+              <p className="pt-3 md:w-4/5">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy.</p>
             </div>
           </div>
-        </div>
       </div>
 
       <SectionHeader headerText="evaluate the policies" subheaderText="Our data set currently features the Biden administration’s climate program. More policies will become available as their data are integrated with the REPEAT Project." />

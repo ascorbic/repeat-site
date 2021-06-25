@@ -34,6 +34,11 @@ body {
   background-size: 430%;
   background-position: left 817%;
 }
+.white-spacer {
+  height: 160px;
+  width: 40%;
+}
+
 
 .font-forum {
   font-family: "Forum-Regular";
