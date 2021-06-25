@@ -187,7 +187,7 @@ const policies = {
 const RepeatPolicy = ({ policy }) => {
   const activePolicy = policies[policy];
   return activePolicy ? (
-    <div className="bg-policy-background bg-repeat-right-top bg-no-repeat">
+    <div className="bg-policy-background bg-repeat-mobile md:bg-repeat-right-top bg-no-repeat">
       <RepeatHero headerText={activePolicy.header} subheaderText={activePolicy.subHeader} bg="" />
       <div className="container max-w-screen-lg pb-8 m-auto">
         {activePolicy.contentBlocks.map((block, i) => {
