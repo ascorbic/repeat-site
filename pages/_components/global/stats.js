@@ -6,7 +6,7 @@ const Stats = ({ stats }) => {
     stats: [],
   };
   return (
-    <div className="container max-w-screen-lg m-auto">
+    <div className="container max-w-screen-lg m-auto px-0">
       <h3 className="font-bold text-2xl">{stats.header}</h3>
       <div className="flex flex-wrap pt-6">
         {stats.stats.map((stat, i) => (

@@ -125,8 +125,8 @@ const RepeatAbout = () => {
 
       <div className="max-w-screen-xl text-repeat-black">
         <div className="container subpages max-w-screen-lg m-auto pb-10">
-          <div className="md:w-100 pt-5 px-8 md:px-0">
-            <div className="grid grid-cols-4 gap-20">
+          <div className="md:w-100 pt-5 px-0">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-20">
               {team.map((member) => (
                 <div key={member.name} className="py-2 px-3 text-center">
                   {/* <img className="w-full rounded-full" src={`images/${member.name.split(" ").join("-").toLocaleLowerCase()}.svg`} alt={member.name} /> */}

@@ -27,6 +27,13 @@ body {
 .bg-policy-background {
   background-size: 38%;
 }
+.bg-home-cover {
+  background-position: 67% bottom;
+}
+.bg-media-cover {
+  background-size: 430%;
+  background-position: left 817%;
+}
 
 .font-forum {
   font-family: "Forum-Regular";

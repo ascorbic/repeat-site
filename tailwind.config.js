@@ -31,9 +31,6 @@ module.exports = {
       backgroundPosition: {
         "repeat-right-top": "right 16rem top 9rem",
         "repeat-mobile": "right 2rem top 9rem",
-      
-      
-      
       },
       backgroundImage: (theme) => ({
         "media-vox": "url('/images/vox-media.png')",
