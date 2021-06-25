@@ -36,11 +36,11 @@ const RepeatLanding = () => {
           <p>The Princeton ZERO Lab and <a href="http://netzeroamerica.princeton.edu/" target="_blank" rel="noreferrer noopener">Net-Zero America study</a> team, in partnership with <a href="https://www.evolved.energy/" target="_blank" rel="noreferrer noopener">Evolved Energy Research</a>, have developed a suite of geospatial planning and analysis tools coupled with detailed macro-energy system optimization models capable of rapidly evaluating policy and regulatory proposals at politically-relevant spatial resolutions (e.g., state, county, and sometimes finer resolutions). This includes evaluation of candidate sites for wind and solar development, thermal power plant siting and repowering, and transmission expansion as well as associated impacts on air quality and labor/employment.</p>
         </div>
         <div className="md:w-full py-10">
-          <div className="flex h-full items-center">
-            <div className="md:w-1/2">
+          <div className="flex flex-col md:flex-row h-full items-center">
+            <div className="block w-full md:w-1/2">
               <img src="/images/map.svg" alt="" />
             </div>
-            <div className="md:w-1/2 pl-20">
+            <div className="w-full md:w-1/2 pl-0 md:pl-20">
               <div className="block">
                 <span className="inline-block rounded-full w-4 h-4 mr-3 bg-repeat"></span>
                 <span className="inline-block font-bold">PV</span>

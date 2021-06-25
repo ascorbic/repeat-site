@@ -40,8 +40,8 @@ const RepeatMedia = () => {
       <RepeatHero backgroundClass="bg-media-cover bg-center bg-fixed bg-cover bg-no-repeat" />
       <div className="max-w-screen-xl m-auto mx-0 -mt-40 text-repeat-black pb-24">
         <div className="container subpages max-w-screen-lg bg-white rounded-tr-2xl border-t-4 border-repeat">
-          <div className="container max-w-screen-md m-auto px-8 md:px-0 md:pl-8">
-            <h2 className="md:text-5xl pt-8 font-extrabold font-obliqua">
+          <div className="container max-w-screen-md m-auto px-0 md:pl-8">
+            <h2 className="text-2xl md:text-5xl pt-8 font-extrabold font-obliqua">
               Zero Lab + The Repeat <br />
               Project in the Media
             </h2>
