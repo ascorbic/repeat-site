@@ -53,13 +53,41 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+const readScroll = () => {
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    let hasPtClass = document.getElementById("nav-bar").classList.contains("md:pt-6");
+    if (document.documentElement.scrollTop > 100 && hasPtClass) {
+      console.log("start shrinking");
+      document.getElementById("nav-bar").classList.add("md:pt-0");
+      document.getElementById("nav-bar").classList.remove("md:pt-6");
+    }
+    if (document.documentElement.scrollTop < 100 && !hasPtClass) {
+      console.log("unshrinking");
+      document.getElementById("nav-bar").classList.add("md:pt-6");
+      document.getElementById("nav-bar").classList.remove("md:pt-0");
+    }
+    //   document.getElementById("navbar").style.padding = "30px 10px";
+    //   document.getElementById("logo").style.fontSize = "25px";
+    // } else {
+    //   document.getElementById("navbar").style.padding = "80px 10px";
+    //   document.getElementById("logo").style.fontSize = "35px";
+    // }
+  }
+};
+
 export default function RepeatHeader() {
+  if (typeof window !== "undefined") readScroll();
+
   return (
-    <Popover className="fixed w-screen top-0 border-t-8 border-black bg-black bg-opacity-75 z-50">
+    <Popover className="fixed w-screen top-0 border-t-8 border-repeat bg-black bg-opacity-80 z-50">
       {({ open }) => (
         <>
           <div className="container max-w-screen-lg mx-auto pt-4 md:px-1 sm:px-6">
-            <div className="flex justify-between items-center md:pt-6 pb-4 md:justify-start md:space-x-10">
+            <div id="nav-bar" className="flex justify-between items-center md:pt-6 pb-4 md:justify-start md:space-x-10 transition duration-200 ease-in-out">
               <div className="flex justify-start pl-2 md:pl-0 lg:w-0 lg:flex-1">
                 <Link href="/">
                   <a href="/">
@@ -80,21 +108,42 @@ export default function RepeatHeader() {
                     About
                   </a>
                 </Link>
-                <Popover className="relative">
+                <div className="relative group">
+                  <button className={classNames(open ? "text-white" : "font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat", "group inline-flex items-center text-base font-medium hover:text-white focus:outline-none")}>
+                    <Link href="/policies">
+                      <a href="/policies" className="">
+                        <p className="text-base font-medium text-white">Policies</p>
+                      </a>
+                    </Link>
+                  </button>
+                  <div className="absolute z-10 hidden -left-10 -right-40 bg-grey-200 group-hover:block">
+                    <div className="mt-6 shadow-lg">
+                      {policies.map((item) => (
+                        <Link key={item.name} href={item.href}>
+                          <a href={item.href} className="-m-3 p-3 bg-white flex items-start hover:bg-repeat-light">
+                            <div className="px-2">
+                              <p className="text-base font-medium text-black">{item.name}</p>
+                            </div>
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                {/* <Popover className="relative">
                   {({ open }) => (
                     <>
                       <Popover.Button className={classNames(open ? "text-white" : "font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat", "group inline-flex items-center text-base font-medium hover:text-white focus:outline-none")}>
                         <span>Policies</span>
                       </Popover.Button>
 
-                      <Transition show={open} as={Fragment} enter="transition ease-out duration-200" enterFrom="opacity-0 translate-y-1" enterTo="opacity-100 translate-y-0" leave="transition ease-in duration-150" leaveFrom="opacity-100 translate-y-0" leaveTo="opacity-0 translate-y-1">
+                      <Transition show={show} as={Fragment} enter="transition ease-out duration-200" enterFrom="opacity-0 translate-y-1" enterTo="opacity-100 translate-y-0" leave="transition ease-in duration-150" leaveFrom="opacity-100 translate-y-0" leaveTo="opacity-0 translate-y-1">
                         <Popover.Panel static className="absolute z-50 -ml-4 mt-3 transform px-2 w-screen max-w-xs sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div className="overflow-hidden">
                             <div className="relative grid gap-3 bg-white px-3 py-3 sm:gap-4 sm:p-4">
                               {policies.map((item) => (
                                 <Link key={item.name} href={item.href}>
                                   <a href={item.href} className="-m-3 p-3 flex items-start hover:bg-repeat-light">
-                                    {/* <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" /> */}
                                     <div className="ml-4">
                                       <p className="text-base font-medium text-black">{item.name}</p>
                                     </div>
@@ -107,7 +156,7 @@ export default function RepeatHeader() {
                       </Transition>
                     </>
                   )}
-                </Popover>
+                </Popover> */}
                 <Link href="/media">
                   <a href="/media" className="text-base font-medium border-b-4 border-transparent text-white hover:border-b-4 hover:border-repeat">
                     Media
